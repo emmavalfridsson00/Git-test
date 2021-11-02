@@ -1,0 +1,229 @@
+.font-styling, body, .project-text, h2, h3, h4, h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-color: Black;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Navbar*/
+nav {
+  margin-left: -5vw;
+  margin-left: -5vw;
+  width: 100vw;
+}
+nav ul {
+  margin: 10;
+  padding: 10;
+  list-style: none;
+  background-color: GhostWhite;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-style: normal;
+  color: Black;
+}
+
+/* Hover in navbar*/
+a:hover {
+  color: CadetBlue;
+}
+
+a:active {
+  color: DarkBlue;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+h2, h3, h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.project-text {
+  text-align: center;
+  font-size: 1, 2rem;
+}
+
+body {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section, article {
+  margin-bottom: 40px;
+}
+
+article {
+  padding: 20px;
+}
+
+img {
+  width: 100vw;
+  height: auto;
+  padding-bottom: 5vw;
+}
+
+.img-design {
+  padding-top: 130px;
+}
+
+.img-ux {
+  padding-top: 60px;
+}
+
+/* List in articles */
+li:first-child {
+  font-style: italic;
+}
+
+li:nth-child(2) {
+  font-style: italic;
+}
+
+li:nth-child(3) {
+  font-style: italic;
+}
+
+li:nth-child(4) {
+  font-style: italic;
+}
+
+/* Conntact form */
+input[type=text] {
+  width: 30vw;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+/* Conntact form, The one at the bottom is bigger for describing */
+.contact {
+  height: 15vw;
+}
+
+/* Conntact button style */
+.button-style {
+  position: relative;
+  background: GhostWhite;
+  display: table;
+  width: 20vw;
+  padding: 7px 15px 8px 15px;
+  margin-left: 1vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  border-color: #347f8e;
+  border-radius: 10px font-weight bold;
+  opacity: 0.9;
+}
+
+/* Conntact button with the icon */
+.button-style:before {
+  background-image: url(https://icon-library.com/images/check-mark-icon-png/check-mark-icon-png-24.jpg);
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-size: 15px 15px;
+  content: "";
+  top: 14px;
+  left: 230px;
+}
+
+/* Conntact button hover effect */
+.button-style:hover {
+  background-color: #76A5AF;
+  color: white;
+}
+
+/* Conntact button, when you click - the background changes (Javascript) */
+.blue-background {
+  background-color: #134F5C;
+  color: white;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: GhostWhite;
+  margin-left: -5vw;
+  margin-left: -5vw;
+  width: 100vw;
+}
+
+.flexbox-container {
+  display: flex;
+  felx-direction: row;
+}
+
+.felxbox-class {
+  width: 100px;
+  height: 100px;
+  flex: 1 0 50px;
+}
+
+.felxbox-class:nth-child(2) {
+  felx: 1 1 200px;
+}
+
+.container-fluid {
+  display: flex;
+}
+
+/* Create three equal columns that floats next to each other */
+.column-one {
+  display: inline-block;
+  vertical-align: top;
+  width: 32.33%;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column-one {
+    width: 100%;
+  }
+}
+/*Mobilversion (upp till Padda portrait)*/
+@media (min-width: 769px) {
+  img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
